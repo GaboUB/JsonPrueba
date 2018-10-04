@@ -1,0 +1,117 @@
+{
+	"BaseDatos": {
+		"listaClientes": [{
+				"cliente": {
+					"nombre": "Gustavo",
+					"a�oNacimiento": "1999",
+					"saldoCuenta": "1500"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Ariel",
+					"a�oNacimiento": "1975",
+					"saldoCuenta": "200"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Jose",
+					"a�oNacimiento": "1746",
+					"saldoCuenta": "400"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Miriam",
+					"a�oNacimiento": "1958",
+					"saldoCuenta": "240"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Roberto",
+					"a�oNacimiento": "1983",
+					"saldoCuenta": "2000"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Pedro",
+					"a�oNacimiento": "1956",
+					"saldoCuenta": "1468"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Walter",
+					"a�oNacimiento": "1946",
+					"saldoCuenta": "1200"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Gabriel",
+					"a�oNacimiento": "1936",
+					"saldoCuenta": "9000"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Pablo",
+					"a�oNacimiento": "1984",
+					"saldoCuenta": "203"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Dante",
+					"a�oNacimiento": "1982",
+					"saldoCuenta": "1257"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Cecilia",
+					"a�oNacimiento": "1983",
+					"saldoCuenta": "1525"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Oriana",
+					"a�oNacimiento": "1978",
+					"saldoCuenta": "80000"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Fernando",
+					"a�oNacimiento": "1979",
+					"saldoCuenta": "12545"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Alex",
+					"a�oNacimiento": "1989",
+					"saldoCuenta": "5789"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Sebas",
+					"a�oNacimiento": "1975",
+					"saldoCuenta": "785"
+				}
+			},
+			{
+				"cliente": {
+					"nombre": "Agus",
+					"a�oNacimiento": "1969",
+					"saldoCuenta": "7578"
+				}
+			}
+		]
+	}
+}
