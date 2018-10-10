@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	html {
+		height: 90%;
+	}
+
+	body {
+		height:100%;
+	}
+
+	div#contenedor {
+		margin:auto;
+		width:90%;
+		height:100%;
+		background-color: blue;
+	}
+
+	header {
+		width:100%;
+		height:10%;
+		background-color: black blue;
+		overflow:auto;
+	}
+
+	div#cuerpo {
+		width:100%;
+		height:80%;
+		background-color: lightblue;
+		overflow:auto;
+	}
+
+	table {
+	border-style:solid;
+	border-width:1px;
+	border-collapse:collapse; /*Evita las lineas dobles entre celdas contiguas*/
+	width:100%; /*La tabla ocupara el 100% del contenedor*/
+	margin:auto; /*Tabla al medio respecto al contenedor*/
+	table-layout:fixed;
+	}
+
+	thead {
+		background-color: white;
+	}
+
+	tbody {
+		background-color: gray;
+	}
+
+	th {
+	border-style:solid;
+	border-width:1px;
+	cursor:pointer;
+	}
+
+	tr {
+	border-style:solid;
+	border-width:1px;
+	background-color:gray;
+	color:white;
+	cursor:pointer;
+	width:100%;
+	}
+
+	td {
+	border-style:solid;
+	border-width:1px;
+	overflow:auto;
+	}
+
+	</style>
+
+	</head>
+	<body>
+
+	<div id="contenedor">
+
+	<header>
+		<h1>Tabla de datos- Parcial</h1>
+	</header>
+
+	<div id="cuerpo">
+
+
+	<table id="tablaDatos">
+	<thead id="thDatos">
+	<th id="">nombre</th>
+	<th id="">añoNacimiento</th>
+	<th id="">saldoCuenta</th>
+	</thead>
+
+	<tbody id="Items">
+	</tbody>
+
+	</table>
+
+	<button id="cargar">Cargar datos</button>
+    <button id="vaciar">Vaciar datos</button>
+
+   </div> 
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+
+var url = "https://raw.githubusercontent.com/GaboUB/JsonPrueba/master/BaseDatos.json"; 
+
+$(document).ready(function() {
+  $("#vaciar").click(function(){
+    $('#Items').html('');
+    });
+  $("#cargar").click(function() {
+    $.ajax({
+      url: url,
+      dataType: "json",
+      error: function() {
+        console.log("JSON FAILED for data");
+      },
+      success: function(results) {
+        console.log(results);
+        var ItemsList = document.getElementById("Items");
+        results.BaseDatos.listaClientes.forEach(function(element) {
+          Items.insertAdjacentHTML(
+            "beforeend",
+            "<tr>" +
+            "<td>" +
+            element.cliente.nombre +
+            "</td>" +
+            "<td>" +
+            element.cliente.anoNacimiento +
+            "</td>" +
+            "<td>" +
+            element.cliente.saldoCuenta +
+            "</td>" +
+            "</tr>"
+          );
+        });
+      }
+    });
+  });
+});
+</script>
+</html>
